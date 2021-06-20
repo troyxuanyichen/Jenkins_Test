@@ -80,8 +80,7 @@
                 socket.emit('chat message', input.value);
                 input.value = '';
             }
-        }); //cannot add empty line here
-        
+        });
         socket.on('chat message', (msg) => {
             var item = document.createElement('li');
             item.textContent = msg;
